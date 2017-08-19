@@ -3,4 +3,5 @@
 ### Tech-stack:
 - React JS
 - Redux
-- SASS 
+- SASS
+- Twitter Bootstrap

@@ -3,7 +3,13 @@ $matteBlack: #1a1a1a;
 $globalPurple: #aa00ff;
 
 html {
-  background: $globalPurple;
   margin: 0px;
   overflow-x: hidden;
+}
+
+/* MAIN BANNER STYLES */
+.mainBannerDiv {
+  width: auto;
+  height: 100vh;
+  background-color: $globalPurple;
 }

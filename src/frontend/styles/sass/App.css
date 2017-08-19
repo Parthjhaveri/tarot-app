@@ -1,4 +1,9 @@
 html {
-  background: #aa00ff;
   margin: 0px;
   overflow-x: hidden; }
+
+/* MAIN BANNER STYLES */
+.mainBannerDiv {
+  width: auto;
+  height: 100vh;
+  background-color: #aa00ff; }

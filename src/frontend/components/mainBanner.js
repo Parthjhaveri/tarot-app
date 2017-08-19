@@ -7,7 +7,7 @@ class MainBanner extends Component {
       <div className="mainBannerDiv">
 
         <div className="mountainPicDiv">
-          Life is full of mountains- let me help you climb them...
+          <p>Life is full of mountains- let me help you climb them...</p>
         </div>
 
       </div>

@@ -11,36 +11,44 @@ html {
 
 .mountainPicDiv {
   width: auto;
-  height: 200px;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../images/mountains.jpg");
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../../images/mountains.jpg");
   background-size: 110%;
   background-position: center center;
   background-repeat: no-repeat;
   font-family: "Open Sans", sans-serif;
   color: white;
-  font-size: 40px;
-  padding: 60px 40px 40px 100px; }
+  font-size: 35px;
+  padding: 170px 40px 40px 100px;
+  text-align: center; }
 
+/* MEDIA QUERY FOR MAIN BANNER */
+@media only screen and (max-width: 900px) {
+  .mountainPicDiv {
+    height: auto;
+    padding: 60px 40px 40px 40px;
+    background-size: 200%;
+    text-align: left; } }
+
+/* END MEDIA QUERY FOR MAIN BANNER */
 /* END MAIN BANNER STYLES */
 /* NAVBAR STYLES */
 .navDiv {
   width: auto;
   height: 80px;
-  background-color: white;
+  background-color: #f2f2f2;
   padding: 20px; }
 
-/* MEDIA QUERY FOR MAIN BANNER */
-@media only screen and (max-width: 690px) {
-  .mountainPicDiv {
-    height: auto;
-    padding: 60px 40px 40px 40px;
-    background-size: 200%; } }
+#headingLogo {
+  float: left;
+  display: inline-block;
+  color: #ff5050;
+  font-size: 22px; }
 
-/* END MEDIA QUERY FOR MAIN BANNER */
 .contactMe {
   width: auto;
   height: auto;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #ff5050;
   color: white;
   font-family: "Quicksand", sans-serif;
@@ -48,12 +56,15 @@ html {
   padding: 10px 20px;
   font-weight: bolder;
   float: right;
-  transition: .5s; }
+  transition: .5s;
+  box-sizing: border-box;
+  display: inline-block; }
 
 .contactMe:hover {
   background-color: white;
   color: #ff5050;
   border: 1px solid #ff5050;
-  transition: .5s; }
+  transition: .5s;
+  box-sizing: border-box; }
 
 /* END NAVBAR STYLES */

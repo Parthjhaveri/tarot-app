@@ -13,10 +13,11 @@ $globalPurple: #aa00ff;
 $fluorescentGreen: #00e6ac;
 $fluorescentRed: #ff5050;
 $darkGreen: #476b6b;
+$grey: #f2f2f2;
 
 // FONT SIZES ---
-$buttonFontSize: 18px;
-$bigHeadingSize: 40px;
+$buttonFontSize: 16px;
+$bigHeadingSize: 35px;
 
 // FONT STYLES ---
 $quicksand: 'Quicksand', sans-serif;
@@ -43,11 +44,11 @@ html {
 
 .mountainPicDiv {
   width: auto;
-  height: 200px;
+  height: 400px;
   background:
     linear-gradient(
-      rgba(0, 0, 0, 0.45),
-      rgba(0, 0, 0, 0.45)
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
     ),
     url('../../images/mountains.jpg');
     background-size: 110%;
@@ -56,31 +57,40 @@ html {
   font-family: $sansSerif;
   color: white;
   font-size: $bigHeadingSize;
-  padding: 60px 40px 40px 100px;
+  padding: 170px 40px 40px 100px;
+  text-align: center;
 }
+
+/* MEDIA QUERY FOR MAIN BANNER */
+
+@media only screen and (max-width: 900px) {
+
+  .mountainPicDiv {
+    height: auto;
+    padding: 60px 40px 40px 40px;
+    background-size: 200%;
+    text-align: left;
+  }
+
+}
+/* END MEDIA QUERY FOR MAIN BANNER */
+
 /* END MAIN BANNER STYLES */
 
 /* NAVBAR STYLES */
 .navDiv {
   width: auto;
   height: 80px;
-  background-color: white;
+  background-color: $grey;
   padding: 20px;
 }
 
-/* MEDIA QUERY FOR MAIN BANNER */
-
-@media only screen and (max-width: 690px) {
-
-  .mountainPicDiv {
-    height: auto;
-    padding: 60px 40px 40px 40px;
-    background-size: 200%;
-  }
-
+#headingLogo {
+  float: left;
+  display: inline-block;
+  color: $fluorescentRed;
+  font-size: 22px;
 }
-
-/* END MEDIA QUERY FOR MAIN BANNER */
 
 // NAVBAR CONTACT BUTTON
 .contactMe {
@@ -95,6 +105,8 @@ html {
   font-weight: bolder;
   float: right;
   transition: .5s;
+  box-sizing: border-box;
+  display: inline-block;
 }
 
 .contactMe:hover {
@@ -102,5 +114,6 @@ html {
   color: $fluorescentRed;
   border: 1px solid $fluorescentRed;
   transition: .5s;
+  box-sizing: border-box;
 }
 /* END NAVBAR STYLES */

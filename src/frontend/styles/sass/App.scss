@@ -1,7 +1,22 @@
-// VARIABLES
+// ------------------------ VARIABLES ------------------------
+
+// COLORS
 $matteBlack: #1a1a1a;
 $globalPurple: #aa00ff;
+$fluorescentGreen: #00e6ac;
+$fluorescentRed: #ff5050;
+$darkGreen: #476b6b;
 
+// FONT SIZES
+$buttonFontSize: 18px;
+
+// FONT STYLES
+$quicksand: 'Quicksand', sans-serif;
+
+// BORDER STYLES
+$noBorder: 1px solid white;
+
+// -------------------------- STYLES -------------------------
 html {
   margin: 0px;
   overflow-x: hidden;
@@ -12,4 +27,40 @@ html {
   width: auto;
   height: 100vh;
   background-color: $globalPurple;
+  background-image: url('../../images/peacock.jpg');
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
+/* END MAIN BANNER STYLES */
+
+/* NAVBAR STYLES */
+.navDiv {
+  width: auto;
+  height: 80px;
+  background-color: white;
+  padding: 20px;
+}
+
+// NAVBAR CONTACT BUTTON
+.contactMe {
+  width: auto;
+  height: auto;
+  font-size: $buttonFontSize;
+  background-color: $fluorescentRed;
+  color: white;
+  font-family: $quicksand;
+  border : $noBorder;
+  padding: 10px 20px;
+  font-weight: bolder;
+  float: right;
+  transition: .5s;
+}
+
+.contactMe:hover {
+  background-color: white;
+  color: $fluorescentRed;
+  border: 1px solid $fluorescentRed;
+  transition: .5s;
+}
+/* END NAVBAR STYLES */

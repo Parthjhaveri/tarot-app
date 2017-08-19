@@ -5,7 +5,11 @@ class MainBanner extends Component {
   render() {
     return (
       <div className="mainBannerDiv">
-        saasdasd
+
+        <div className="mountainPicDiv">
+          Life is full of mountains- let me help you climb them...
+        </div>
+
       </div>
     );
   }

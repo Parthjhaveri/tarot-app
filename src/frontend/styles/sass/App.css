@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
 html {
   margin: 0px;
   overflow-x: hidden; }
@@ -6,11 +7,19 @@ html {
 .mainBannerDiv {
   width: auto;
   height: 100vh;
-  background-color: #aa00ff;
-  background-image: url("../../images/peacock.jpg");
-  background-size: 100%;
+  background-color: #f2f2f2; }
+
+.mountainPicDiv {
+  width: auto;
+  height: 200px;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../images/mountains.jpg");
+  background-size: 110%;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 40px;
+  padding: 60px 40px 40px 100px; }
 
 /* END MAIN BANNER STYLES */
 /* NAVBAR STYLES */
@@ -20,6 +29,14 @@ html {
   background-color: white;
   padding: 20px; }
 
+/* MEDIA QUERY FOR MAIN BANNER */
+@media only screen and (max-width: 690px) {
+  .mountainPicDiv {
+    height: auto;
+    padding: 60px 40px 40px 40px;
+    background-size: 200%; } }
+
+/* END MEDIA QUERY FOR MAIN BANNER */
 .contactMe {
   width: auto;
   height: auto;

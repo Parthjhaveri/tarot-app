@@ -222,13 +222,14 @@ html {
 #headingLogo {
   float: left;
   display: inline-block;
-  color: #ff5050;
-  font-size: 22px; }
+  color: #1a1a1a;
+  font-size: 22px;
+  font-weight: lighter; }
 
 .contactMe {
   width: auto;
   height: auto;
-  font-size: 16px;
+  font-size: 14px;
   background-color: #f2f2f2;
   color: #1a1a1a;
   font-family: "Quicksand", sans-serif;
@@ -262,8 +263,8 @@ html {
   display: none; }
 
 #logo {
-  width: 50px;
-  margin-top: -10px; }
+  width: 40px;
+  margin-top: -8px; }
 
 /* MEDIA QUERY FOR NAVBAR */
 @media only screen and (max-width: 900px) {
@@ -301,7 +302,13 @@ html {
 
 .orangeBanner {
   width: auto;
-  height: 100px;
-  background-color: white; }
+  height: auto;
+  background-color: #8000ff;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: white; }
+
+#taraBlockquote {
+  color: #ff471a; }
 
 /* END ABOUT ME COMPONENT STYLES */

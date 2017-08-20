@@ -31,6 +31,9 @@ class About extends Component {
                     <br />
                     <br />
                     Please feel free to reach out!
+                    <blockquote>
+                    <h3 id="taraBlockquote">- TARA</h3>
+                    </blockquote>
                   </div>
                 </div>
               </div>
@@ -39,6 +42,7 @@ class About extends Component {
         </div>
 
         <div className="orangeBanner">
+          <center><h2>Get your free online reading</h2></center>
         </div>
 
     </div>

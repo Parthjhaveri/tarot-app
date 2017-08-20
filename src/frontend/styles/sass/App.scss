@@ -293,15 +293,16 @@ html {
 #headingLogo {
   float: left;
   display: inline-block;
-  color: $fluorescentRed;
+  color: $matteBlack;
   font-size: 22px;
+  font-weight: lighter;
 }
 
 // NAVBAR CONTACT BUTTON
 .contactMe {
   width: auto;
   height: auto;
-  font-size: $buttonFontSize;
+  font-size: 14px;
   background-color: #f2f2f2;
   color: $matteBlack;
   font-family: $quicksand;
@@ -340,8 +341,8 @@ html {
 }
 
 #logo {
-  width: 50px;
-  margin-top: -10px;
+  width: 40px;
+  margin-top: -8px;
 }
 
 /* MEDIA QUERY FOR NAVBAR */
@@ -396,8 +397,16 @@ html {
 
 .orangeBanner {
   width: auto;
-  height: 100px;
-  background-color: white;
+  height: auto;
+  background-color: $globalPurple;
+  padding: 20px;
+  font-family: $sansSerif;
+  color: white;
+}
+
+#taraBlockquote {
+  color: $orange;
+
 }
 
 /* END ABOUT ME COMPONENT STYLES */

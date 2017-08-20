@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/sass/App.css';
 
 class About extends Component {
@@ -42,7 +43,7 @@ class About extends Component {
         </div>
 
         <div className="orangeBanner">
-          <center><h2 id="freeReadingHeading">Get your free online reading</h2><button id="freereading">FREE READING</button></center>
+          <center><h2 id="freeReadingHeading">Get your free online reading</h2><Link to={'tarot-app'}><button id="freereading">FREE READING</button></Link></center>
         </div>
 
     </div>

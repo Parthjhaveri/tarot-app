@@ -326,7 +326,11 @@ html {
   border: 2px solid #b38600;
   margin-left: 40px;
   font-size: 25px;
-  padding: 5px 20px; }
+  padding: 5px 20px;
+  color: white; }
+
+#freereading:hover {
+  color: white; }
 
 /* END ABOUT ME COMPONENT STYLES */
 /* BOOK ME STYLES */
@@ -351,7 +355,8 @@ html {
   padding: 20px;
   font-family: "Open Sans", sans-serif;
   color: white;
-  transition: 1s; }
+  transition: 1s;
+  margin-bottom: 30px; }
 
 .bookBox:hover {
   transition: 1s;
@@ -378,3 +383,27 @@ html {
   transition: 1s; }
 
 /* END BOOK ME STYLES */
+/* FOOTER STYLES */
+.footerDiv {
+  width: auto;
+  height: 400px;
+  background-color: #f2f2f2; }
+
+/* END FOOTER STYLES */
+/* TAROT DIV STYLES */
+.tarotAppDiv {
+  width: auto;
+  height: 100vh;
+  background-color: #f2f2f2;
+  padding: 40px; }
+
+#dailyCardDiv {
+  width: 400px;
+  height: 600px;
+  padding: 40px;
+  background-color: white; }
+
+#dailyCardPic {
+  width: 200px; }
+
+/* END TAROT DIV STYLES */

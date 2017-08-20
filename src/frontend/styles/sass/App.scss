@@ -283,6 +283,8 @@ html {
 
 /* END MAIN BANNER STYLES */
 
+// -----------------------------------------------------------------------------
+
 /* NAVBAR STYLES */
 .navDiv {
   width: auto;
@@ -426,6 +428,11 @@ html {
   margin-left: 40px;
   font-size: 25px;
   padding: 5px 20px;
+  color: white;
+}
+
+#freereading:hover {
+  color: white;
 }
 
 /* END ABOUT ME COMPONENT STYLES */
@@ -458,6 +465,7 @@ html {
   font-family: $sansSerif;
   color: white;
   transition: 1s;
+  margin-bottom: 30px;
 }
 
 .bookBox:hover {
@@ -489,3 +497,39 @@ html {
 }
 
 /* END BOOK ME STYLES */
+
+// -----------------------------------------------------------------------------
+
+/* FOOTER STYLES */
+
+.footerDiv {
+  width: auto;
+  height: 400px;
+  background-color: #f2f2f2;
+}
+
+/* END FOOTER STYLES */
+
+// -----------------------------------------------------------------------------
+
+/* TAROT DIV STYLES */
+
+  .tarotAppDiv {
+    width: auto;
+    height: 100vh;
+    background-color: #f2f2f2;
+    padding: 40px;
+  }
+
+  #dailyCardDiv {
+    width: 400px;
+    height: 600px;
+    padding: 40px;
+    background-color: white;
+  }
+
+  #dailyCardPic {
+    width: 200px;
+  }
+
+/* END TAROT DIV STYLES */

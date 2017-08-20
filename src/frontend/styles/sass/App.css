@@ -48,11 +48,142 @@ html {
 
 .purpleDiv {
   width: auto;
-  height: 15vh;
-  background-color: #8000ff; }
+  height: 85px;
+  background-color: #8000ff;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Quicksand", sans-serif; }
 
 #subheading {
   font-size: 20px; }
+
+#icanhelpyouregain {
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 10px; }
+
+.tagline {
+  font-size: 35px;
+  color: white;
+  font-weight: bolder;
+  display: inline-block;
+  margin-top: -55px;
+  margin-left: 110px; }
+
+.a {
+  /*display: none;*/
+  opacity: 1;
+  transition: 1s;
+  position: absolute;
+  animation: fadeA 8s infinite;
+  -webkit-animation: fadeA 8s infinite; }
+
+/*KEYFRAME FOR A*/
+@keyframes fadeA {
+  0% {
+    opacity: 1; }
+  33.333% {
+    opacity: 0; }
+  66.666% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.b {
+  /*display: none;*/
+  opacity: 1;
+  transition: 1s;
+  position: absolute;
+  animation: fadeB 8s infinite;
+  -webkit-animation: fadeB 8s infinite; }
+
+/*KEYFRAME FOR B*/
+@keyframes fadeB {
+  0% {
+    opacity: 0; }
+  33.333% {
+    opacity: 1; }
+  66.666% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+.c {
+  /*display: none;*/
+  opacity: 0;
+  transition: 1s;
+  position: absolute;
+  animation: fadeC 8s infinite;
+  -webkit-animation: fadeC 8s infinite; }
+
+/*KEYFRAME FOR C*/
+@keyframes fadeC {
+  0% {
+    opacity: 0; }
+  33.333% {
+    opacity: 0; }
+  66.666% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.d {
+  display: none;
+  opacity: 0;
+  transition: 1s;
+  position: absolute;
+  animation: fadeD 8s infinite;
+  -webkit-animation: fadeD 8s infinite; }
+
+/*KEYFRAME FOR D*/
+@keyframes fadeD {
+  0% {
+    opacity: 0; }
+  33.333% {
+    opacity: 1; }
+  66.666% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+.e {
+  display: none;
+  opacity: 0;
+  transition: 1s;
+  position: absolute;
+  animation: fadeE 8s infinite;
+  -webkit-animation: fadeE 8s infinite; }
+
+/*KEYFRAME FOR E*/
+@keyframes fadeE {
+  0% {
+    opacity: 1; }
+  33.333% {
+    opacity: 0; }
+  66.666% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.f {
+  display: none;
+  opacity: 0;
+  transition: 1s;
+  position: absolute;
+  animation: fadeF 8s infinite;
+  -webkit-animation: fadeF 8s infinite; }
+
+/*KEYFRAME FOR F*/
+@keyframes fadeF {
+  0% {
+    opacity: 0; }
+  33.333% {
+    opacity: 1; }
+  66.666% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /* MEDIA QUERY FOR MAIN BANNER */
 @media only screen and (max-width: 900px) {

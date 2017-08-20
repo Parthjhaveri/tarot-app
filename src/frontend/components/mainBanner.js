@@ -18,6 +18,15 @@ class MainBanner extends Component {
         </div>
 
         <div className="purpleDiv">
+        <p id="icanhelpyouregain">I can help you regain...</p>
+          <center>
+            <p className="tagline a">Wisdom</p>
+            <p className="tagline b">Courage</p>
+            <p className="tagline c">Success</p>
+            <p className="tagline d">Prosperity</p>
+            <p className="tagline e">Peace of mind</p>
+            <p className="tagline f">Mindfullness</p>
+          </center>
         </div>
 
       </div>

@@ -28,6 +28,7 @@ $fluorescentRed: #ff5050;
 $darkGreen: #476b6b;
 $grey: #f2f2f2;
 $orange: #ff471a;
+$khaki: #b38600;
 
 // FONT SIZES --->
 $buttonFontSize: 16px;
@@ -374,8 +375,8 @@ html {
   width: auto;
   height: auto;
   background-color: #f2f2f2;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .picDiv {
@@ -383,6 +384,7 @@ html {
   height: 200px;
   border-radius: 100px;
   border: 1px solid black;
+  margin-bottom: 40px;
 }
 
 #descriptionDiv {
@@ -399,14 +401,29 @@ html {
   width: auto;
   height: auto;
   background-color: $globalPurple;
-  padding: 20px;
+  padding: 40px;
   font-family: $sansSerif;
   color: white;
 }
 
 #taraBlockquote {
   color: $orange;
+}
 
+#freeReadingHeading {
+  display: inline-block;
+}
+
+#freereading {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: $globalPurple;
+  font-family: $sansSerif;
+  border: 2px solid $khaki;
+  margin-left: 40px;
+  font-size: 25px;
+  padding: 5px 20px;
 }
 
 /* END ABOUT ME COMPONENT STYLES */

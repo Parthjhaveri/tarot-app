@@ -282,14 +282,15 @@ html {
   width: auto;
   height: auto;
   background-color: #f2f2f2;
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-top: 80px;
+  padding-bottom: 80px; }
 
 .picDiv {
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  border: 1px solid black; }
+  border: 1px solid black;
+  margin-bottom: 40px; }
 
 #descriptionDiv {
   width: auto;
@@ -304,11 +305,25 @@ html {
   width: auto;
   height: auto;
   background-color: #8000ff;
-  padding: 20px;
+  padding: 40px;
   font-family: "Open Sans", sans-serif;
   color: white; }
 
 #taraBlockquote {
   color: #ff471a; }
+
+#freeReadingHeading {
+  display: inline-block; }
+
+#freereading {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: #8000ff;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid #b38600;
+  margin-left: 40px;
+  font-size: 25px;
+  padding: 5px 20px; }
 
 /* END ABOUT ME COMPONENT STYLES */

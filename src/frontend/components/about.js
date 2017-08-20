@@ -42,7 +42,7 @@ class About extends Component {
         </div>
 
         <div className="orangeBanner">
-          <center><h2>Get your free online reading</h2></center>
+          <center><h2 id="freeReadingHeading">Get your free online reading</h2><button id="freereading">FREE READING</button></center>
         </div>
 
     </div>

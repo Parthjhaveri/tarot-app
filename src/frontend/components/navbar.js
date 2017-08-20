@@ -6,7 +6,7 @@ class Navbar extends Component {
     return (
       <div className="navDiv">
         <p id="headingLogo">TARA TAROT & HOME</p>
-        <button className="contactMe">CONTACT</button>
+        <button className="contactMe">CONTACT ME</button>
         <i className="fa fa-bars ham" aria-hidden="true"></i>
 
         <ul className="socialUl">

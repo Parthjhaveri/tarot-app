@@ -93,7 +93,6 @@ html {
   margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
-  border-radius: 5px;
 }
 
 .mainBannerButton:hover {
@@ -307,7 +306,7 @@ html {
   color: $matteBlack;
   font-family: $quicksand;
   border : 1px solid $matteBlack;
-  padding: 8px 20px;
+  padding: 8px 15px;
   font-weight: bolder;
   float: right;
   transition: .5s;
@@ -338,6 +337,11 @@ html {
   float: right;
   font-size: 40px;
   display: none;
+}
+
+#logo {
+  width: 50px;
+  margin-top: -10px;
 }
 
 /* MEDIA QUERY FOR NAVBAR */
@@ -388,6 +392,12 @@ html {
   font-size: 20px;
   line-height: 2em;
   font-weight: bolder;
+}
+
+.orangeBanner {
+  width: auto;
+  height: 100px;
+  background-color: white;
 }
 
 /* END ABOUT ME COMPONENT STYLES */

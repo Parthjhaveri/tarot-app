@@ -39,8 +39,7 @@ html {
   margin: 0 auto;
   margin-top: 40px;
   margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 5px; }
+  margin-right: 20px; }
 
 .mainBannerButton:hover {
   background-color: white;
@@ -234,7 +233,7 @@ html {
   color: #1a1a1a;
   font-family: "Quicksand", sans-serif;
   border: 1px solid #1a1a1a;
-  padding: 8px 20px;
+  padding: 8px 15px;
   font-weight: bolder;
   float: right;
   transition: .5s;
@@ -261,6 +260,10 @@ html {
   float: right;
   font-size: 40px;
   display: none; }
+
+#logo {
+  width: 50px;
+  margin-top: -10px; }
 
 /* MEDIA QUERY FOR NAVBAR */
 @media only screen and (max-width: 900px) {
@@ -295,5 +298,10 @@ html {
   font-size: 20px;
   line-height: 2em;
   font-weight: bolder; }
+
+.orangeBanner {
+  width: auto;
+  height: 100px;
+  background-color: white; }
 
 /* END ABOUT ME COMPONENT STYLES */

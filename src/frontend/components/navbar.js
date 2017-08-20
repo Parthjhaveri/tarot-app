@@ -5,7 +5,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className="navDiv">
-        <p id="headingLogo">TARA TAROT & HOME</p>
+        <p id="headingLogo"><img id="logo" src="http://www.clker.com/cliparts/j/L/K/k/u/r/a-sun-cartoon-with-a-long-ray-md.png" /></p>
         <button className="contactMe">CONTACT ME</button>
         <i className="fa fa-bars ham" aria-hidden="true"></i>
 

@@ -380,11 +380,14 @@ html {
 }
 
 .picDiv {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+  border-radius: 200px;
+  border: 1px solid none;
   margin-bottom: 40px;
+  background-image: url('http://conferenceonarchitecture.com/wp-content/uploads/2017/03/M.Obama_bio_hero_v1.jpg');
+  background-position: center center;
+  background-size: 150%;
 }
 
 #descriptionDiv {
@@ -394,7 +397,6 @@ html {
   font-family: $sansSerif;
   font-size: 20px;
   line-height: 2em;
-  font-weight: bolder;
 }
 
 .orangeBanner {
@@ -427,3 +429,15 @@ html {
 }
 
 /* END ABOUT ME COMPONENT STYLES */
+
+// -----------------------------------------------------------------------------
+
+/* BOOK ME STYLES */
+
+.bookMeDiv {
+  width: auto;
+  height: 400px;
+  background-color: $orange;
+}
+
+/* END BOOK ME STYLES */

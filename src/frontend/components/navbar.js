@@ -7,6 +7,7 @@ class Navbar extends Component {
       <div className="navDiv">
         <p id="headingLogo">TARA TAROT & HOME</p>
         <button className="contactMe">CONTACT</button>
+        <i className="fa fa-bars ham" aria-hidden="true"></i>
 
         <ul className="socialUl">
           <li className="socialUlLi"><i className="fa fa-facebook-official" aria-hidden="true"></i></li>

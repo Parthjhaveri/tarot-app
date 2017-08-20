@@ -27,6 +27,7 @@ class MainBanner extends Component {
             <p className="tagline e">Peace of mind</p>
             <p className="tagline f">Mindfullness</p>
           </center>
+          <center><i className="fa fa-angle-down downArr" aria-hidden="true"></i></center>
         </div>
 
       </div>

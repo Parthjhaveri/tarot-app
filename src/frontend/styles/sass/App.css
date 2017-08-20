@@ -13,7 +13,7 @@ html {
   width: auto;
   height: 500px;
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../../images/mountains.jpg");
-  background-size: 110%;
+  background-size: 150%;
   background-position: center center;
   background-repeat: no-repeat;
   font-family: "Open Sans", sans-serif;
@@ -38,7 +38,8 @@ html {
   margin: 0 auto;
   margin-top: 40px;
   margin-left: 20px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  border-radius: 5px; }
 
 .mainBannerButton:hover {
   background-color: white;
@@ -54,6 +55,10 @@ html {
   text-align: center;
   color: white;
   font-family: "Quicksand", sans-serif; }
+
+.downArr {
+  display: none;
+  font-size: 60px; }
 
 #subheading {
   font-size: 20px; }
@@ -188,13 +193,21 @@ html {
 /* MEDIA QUERY FOR MAIN BANNER */
 @media only screen and (max-width: 900px) {
   .mountainPicDiv {
-    height: auto;
+    height: 500px;
     padding: 60px 40px 40px 40px;
-    background-size: 300%;
+    background-size: 350%;
     text-align: left; }
   .mainBannerButton {
     margin-left: 10px;
-    margin-right: 0px; } }
+    margin-right: 0px; }
+  .purpleDiv {
+    height: 15vh; }
+  #icanhelpyouregain {
+    display: none; }
+  .tagline {
+    display: none; }
+  .downArr {
+    display: inherit; } }
 
 /* END MEDIA QUERY FOR MAIN BANNER */
 /* END MAIN BANNER STYLES */
@@ -243,4 +256,19 @@ html {
   margin-right: 20px;
   font-size: 30px; }
 
+.ham {
+  float: right;
+  font-size: 40px;
+  display: none; }
+
+/* MEDIA QUERY FOR NAVBAR */
+@media only screen and (max-width: 900px) {
+  .socialUl {
+    display: none; }
+  .contactMe {
+    display: none; }
+  .ham {
+    display: inherit; } }
+
+/* END MEDIA QUERY FOR NAVBAR */
 /* END NAVBAR STYLES */

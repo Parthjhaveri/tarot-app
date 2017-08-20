@@ -1,7 +1,14 @@
 // -----------------------------------------------------------------------------
 // IMPORT GOOGLE FONTS
 // -----------------------------------------------------------------------------
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+// -----------------------------------------------------------------------------
+// IMPORT MXINS
+// -----------------------------------------------------------------------------
+
+// @import ('./mixins/_mixins.scss')
 
 // -----------------------------------------------------------------------------
 // GLOBAL STYLE VARIABLES
@@ -9,11 +16,12 @@
 
 // COLORS --->
 $matteBlack: #1a1a1a;
-$globalPurple: #aa00ff;
+$globalPurple: #8000ff;
 $fluorescentGreen: #00e6ac;
 $fluorescentRed: #ff5050;
 $darkGreen: #476b6b;
 $grey: #f2f2f2;
+$orange: #ff471a;
 
 // FONT SIZES --->
 $buttonFontSize: 16px;
@@ -44,7 +52,7 @@ html {
 
 .mountainPicDiv {
   width: auto;
-  height: 400px;
+  height: 500px;
   background:
     linear-gradient(
       rgba(0, 0, 0, 0.55),
@@ -61,6 +69,42 @@ html {
   text-align: center;
 }
 
+.mainBannerButton {
+  width: auto;
+  height: auto;
+  font-size: $buttonFontSize;
+  background-color: $orange;
+  color: white;
+  font-family: $quicksand;
+  padding: 10px 20px;
+  font-weight: bolder;
+  transition: .5s;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid transparent;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mainBannerButton:hover {
+  background-color: white;
+  color: $fluorescentRed;
+  transition: .5s;
+  box-sizing: border-box;
+}
+
+.purpleDiv {
+  width: auto;
+  height: 15vh;
+  background-color: $globalPurple;
+}
+
+#subheading {
+  font-size: 20px;
+}
+
 /* MEDIA QUERY FOR MAIN BANNER */
 
 @media only screen and (max-width: 900px) {
@@ -68,8 +112,13 @@ html {
   .mountainPicDiv {
     height: auto;
     padding: 60px 40px 40px 40px;
-    background-size: 200%;
+    background-size: 300%;
     text-align: left;
+  }
+
+  .mainBannerButton {
+    margin-left: 10px;
+    margin-right: 0px;
   }
 
 }
@@ -97,7 +146,7 @@ html {
   width: auto;
   height: auto;
   font-size: $buttonFontSize;
-  background-color: $fluorescentRed;
+  background-color: $orange;
   color: white;
   font-family: $quicksand;
   border : $noBorder;
@@ -115,5 +164,17 @@ html {
   border: 1px solid $fluorescentRed;
   transition: .5s;
   box-sizing: border-box;
+}
+
+.socialUl {
+  float: right;
+  display: inline-block;
+  list-style: none;
+}
+
+.socialUlLi {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 30px;
 }
 /* END NAVBAR STYLES */

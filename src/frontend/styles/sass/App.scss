@@ -436,8 +436,56 @@ html {
 
 .bookMeDiv {
   width: auto;
-  height: 400px;
+  height: auto;
   background-color: $orange;
+  padding: 40px;
+  font-family: $sansSerif;
+  color: white;
+  font-weight: bolder;
+}
+
+#appthr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 80%;
+}
+
+.bookBox {
+  width: 90%;
+  height: 400px;
+  border: 1px solid #f2f2f2;
+  padding: 20px;
+  font-family: $sansSerif;
+  color: white;
+  transition: 1s;
+}
+
+.bookBox:hover {
+  transition: 1s;
+  background-color: white;
+  color: $matteBlack;
+}
+
+#userIcon {
+  font-size: 100px;
+  color: $globalPurple;
+}
+
+#phoneIcon {
+  font-size: 100px;
+  color: $globalPurple;
+}
+
+.schedApptButton {
+  width: auto;
+  height: auto;
+  border: 2px solid white;
+  font-size: 20px;
+  font-family: $sansSerif;
+  background-color: $orange;
+  margin-top: 40px;
+  padding: 10px 20px;
+  transition: 1s;
 }
 
 /* END BOOK ME STYLES */

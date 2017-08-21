@@ -29,6 +29,7 @@ $darkGreen: #476b6b;
 $grey: #f2f2f2;
 $orange: #ff471a;
 $khaki: #b38600;
+$oliveGreen: #339966;
 
 // FONT SIZES --->
 $buttonFontSize: 16px;
@@ -81,7 +82,7 @@ html {
   width: auto;
   height: auto;
   font-size: $buttonFontSize;
-  background-color: #339966;
+  background-color: $oliveGreen;
   color: white;
   font-family: $quicksand;
   padding: 10px 20px;
@@ -549,7 +550,7 @@ html {
   }
 
   #dailyCardDiv {
-    width: 500px;
+    width: auto;
     height: auto;
     padding: 40px;
     background-color: white;
@@ -570,6 +571,42 @@ html {
 
   #dailyCardPic {
     width: 200px;
+  }
+
+  #pickACardDiv {
+    width: auto;
+    height: 600px;
+    background-color: white;
+    // padding: 40px;
+    box-shadow: 40px 10px 40px silver;
+    color: white;
+  }
+
+  .blackDiv {
+    width: auto;
+    height: auto;
+    background-color: $oliveGreen;
+    padding: 40px;
+  }
+
+  .card {
+    width: 80px;
+    height: 120px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    background-color: #133a26;
+    background-image: url('http://www.aeclectic.net/tarot/cards/_img/madame-endora-08642.jpg');
+    background-size: 100%;
+    background-position: center center;
+    display: inline-block;
+    margin: 2px;
+    margin-left: -100px;
+  }
+
+  .card:hover {
+    width: 82px;
+    height: 122px;
+    background-color: $matteBlack;
   }
 
 /* END TAROT DIV STYLES */

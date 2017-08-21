@@ -421,7 +421,7 @@ html {
   font-family: "Open Sans", sans-serif; }
 
 #dailyCardDiv {
-  width: 500px;
+  width: auto;
   height: auto;
   padding: 40px;
   background-color: white;
@@ -439,5 +439,36 @@ html {
 
 #dailyCardPic {
   width: 200px; }
+
+#pickACardDiv {
+  width: auto;
+  height: 600px;
+  background-color: white;
+  box-shadow: 40px 10px 40px silver;
+  color: white; }
+
+.blackDiv {
+  width: auto;
+  height: auto;
+  background-color: #339966;
+  padding: 40px; }
+
+.card {
+  width: 80px;
+  height: 120px;
+  border-radius: 5px;
+  border: 2px solid grey;
+  background-color: #133a26;
+  background-image: url("http://www.aeclectic.net/tarot/cards/_img/madame-endora-08642.jpg");
+  background-size: 100%;
+  background-position: center center;
+  display: inline-block;
+  margin: 2px;
+  margin-left: -100px; }
+
+.card:hover {
+  width: 82px;
+  height: 122px;
+  background-color: #1a1a1a; }
 
 /* END TAROT DIV STYLES */

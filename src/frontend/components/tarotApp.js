@@ -230,22 +230,87 @@ class TarotApp extends Component {
           <center>
             <div className="row">
 
-              <div className="col-md-4" id="dailyCardDiv">
-                <center>
-                  <h1>Card of the day:</h1>
-                   <br />
-                    <img src={this.state.dailyPic} id="dailyCardPic" />
-                      <h3>{this.state.cardMeaning}</h3>
-                        <hr id="dailyCardHr"/>
-                          <br />
-                        <p id="cardDescription">{this.state.cardDesc}</p>
-                      <br />
-                   <p><em>Content reference credit: <a href="https://www.daily-tarot-girl.com/tarot-card-meanings/list-of-tarot-card-meanings/" target="_blank">https:daily-tarot-girl.com/tarot-card-meanings/...</a></em></p>
-                 </center>
+              <div className="col-md-5">
+                <div id="dailyCardDiv">
+                  <center>
+                    <h1>Card of the day:</h1>
+                     <br />
+                      <img src={this.state.dailyPic} id="dailyCardPic" />
+                        <h3>{this.state.cardMeaning}</h3>
+                          <hr id="dailyCardHr"/>
+                            <br />
+                          <p id="cardDescription">{this.state.cardDesc}</p>
+                        <br />
+                     <p><em>Content reference credit: <a href="https://www.daily-tarot-girl.com/tarot-card-meanings/list-of-tarot-card-meanings/" target="_blank">https:daily-tarot-girl.com/tarot-card-meanings/...</a></em></p>
+                   </center>
+                </div>
               </div>
 
 
-              <div className="col-md-8">
+              <div className="col-md-7">
+                <div id="pickACardDiv">
+
+                <div className="blackDiv">
+                  <h1>Have a question? Pick 5 cards:</h1>
+                </div>
+                <br />
+                {
+                  // HORIZONTAL TAROT CARD DECK
+                }
+                <center>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                  <div className="card">
+                  </div>
+                </center>
+
+                </div>
               </div>
 
             </div>

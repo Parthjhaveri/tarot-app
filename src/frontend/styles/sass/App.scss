@@ -549,16 +549,16 @@ html {
   }
 
   #dailyCardDiv {
-    width: 50%;
+    width: 500px;
     height: auto;
     padding: 40px;
     background-color: white;
+    box-shadow: 40px 10px 40px silver;
   }
 
   #dailyCardHr {
     width: auto;
-    border: 1px solid grey;
-    opacity: 0;
+    border-color: grey;
     transition: 1s;
   }
 

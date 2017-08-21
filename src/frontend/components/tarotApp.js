@@ -233,15 +233,15 @@ class TarotApp extends Component {
               <div className="col-md-4" id="dailyCardDiv">
                 <center>
                   <h1>Card of the day:</h1>
-                  <br />
-                  <img src={this.state.dailyPic} id="dailyCardPic" />
-                  <h3>{this.state.cardMeaning}</h3>
-                  <hr id="dailyCardHr"/>
-                  <br />
-                  <p id="cardDescription">{this.state.cardDesc}</p>
-                  <br />
-                  <p><em>Content reference credit: <a href="https://www.daily-tarot-girl.com/tarot-card-meanings/list-of-tarot-card-meanings/" target="_blank">https:daily-tarot-girl.com/tarot-card-meanings/...</a></em></p>
-                </center>
+                   <br />
+                    <img src={this.state.dailyPic} id="dailyCardPic" />
+                      <h3>{this.state.cardMeaning}</h3>
+                        <hr id="dailyCardHr"/>
+                          <br />
+                        <p id="cardDescription">{this.state.cardDesc}</p>
+                      <br />
+                   <p><em>Content reference credit: <a href="https://www.daily-tarot-girl.com/tarot-card-meanings/list-of-tarot-card-meanings/" target="_blank">https:daily-tarot-girl.com/tarot-card-meanings/...</a></em></p>
+                 </center>
               </div>
 
 

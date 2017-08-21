@@ -22,7 +22,7 @@ class BookMe extends Component {
               <p className="bookBoxDesc">
                 Contact me today for a Personal reading, where you will be in a serene and comfortable
                 surrounding  to receive a most enlightening experience. You will  be able to  see the
-                cards unfolding in front of you . The Tarot  tells your story and answers your questions.
+                cards unfolding in front of you. The Tarot  tells your story and answers your questions.
                 Let me  be the Medium between you  and the cards. The experience will help you to guide
                 your life in the right direction and help to make important decisions.
                 Since this is a one - on - one experience, there is no direct time limit. It will be ALL about you !

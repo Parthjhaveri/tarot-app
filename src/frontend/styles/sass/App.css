@@ -27,7 +27,7 @@ html {
   width: auto;
   height: auto;
   font-size: 16px;
-  background-color: #ff471a;
+  background-color: #339966;
   color: white;
   font-family: "Quicksand", sans-serif;
   padding: 10px 20px;
@@ -291,9 +291,9 @@ html {
   border-radius: 200px;
   border: 1px solid none;
   margin-bottom: 40px;
-  background-image: url("http://conferenceonarchitecture.com/wp-content/uploads/2017/03/M.Obama_bio_hero_v1.jpg");
+  background-image: url("../../images/tara.png");
   background-position: center center;
-  background-size: 150%; }
+  background-size: 100%; }
 
 #descriptionDiv {
   width: auto;
@@ -350,7 +350,7 @@ html {
 
 .bookBox {
   width: 90%;
-  height: 650px;
+  height: auto;
   border: 1px solid #f2f2f2;
   padding: 40px;
   font-family: "Open Sans", sans-serif;
@@ -434,7 +434,8 @@ html {
 
 #cardDescription {
   text-align: left;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 2em; }
 
 #dailyCardPic {
   width: 200px; }

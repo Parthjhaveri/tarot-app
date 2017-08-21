@@ -106,7 +106,7 @@ html {
 .purpleDiv {
   width: auto;
   height: 85px;
-  background-color: $globalPurple;
+  background-color: $matteBlack;
   padding: 20px;
   text-align: center;
   color: white;
@@ -404,14 +404,14 @@ html {
 .orangeBanner {
   width: auto;
   height: auto;
-  background-color: $globalPurple;
+  background-color: $matteBlack;
   padding: 40px;
   font-family: $sansSerif;
   color: white;
 }
 
 #taraBlockquote {
-  color: $orange;
+  color: $matteBlack;
 }
 
 #freeReadingHeading {
@@ -422,7 +422,7 @@ html {
   display: inline-block;
   width: auto;
   height: auto;
-  background-color: $globalPurple;
+  background-color: $matteBlack;
   font-family: $sansSerif;
   border: 2px solid $khaki;
   margin-left: 40px;
@@ -444,10 +444,10 @@ html {
 .bookMeDiv {
   width: auto;
   height: auto;
-  background-color: $orange;
+  background-color: #e6e6e6;
   padding: 40px;
   font-family: $sansSerif;
-  color: white;
+  color: black;
   font-weight: bolder;
 }
 
@@ -459,11 +459,11 @@ html {
 
 .bookBox {
   width: 90%;
-  height: 400px;
+  height: 650px;
   border: 1px solid #f2f2f2;
-  padding: 20px;
+  padding: 40px;
   font-family: $sansSerif;
-  color: white;
+  color: black;
   transition: 1s;
   margin-bottom: 30px;
 }
@@ -474,26 +474,52 @@ html {
   color: $matteBlack;
 }
 
+.bookHr {
+  width: 100%;
+  border-color: black;
+}
+
 #userIcon {
   font-size: 100px;
-  color: $globalPurple;
+  color: $matteBlack;
 }
 
 #phoneIcon {
   font-size: 100px;
-  color: $globalPurple;
+  color: $matteBlack;
 }
 
 .schedApptButton {
   width: auto;
   height: auto;
-  border: 2px solid white;
+  border: 2px solid $matteBlack;
   font-size: 20px;
   font-family: $sansSerif;
-  background-color: $orange;
+  background-color: white;
   margin-top: 40px;
   padding: 10px 20px;
   transition: 1s;
+}
+
+#leftButton {
+  margin-top: 70px;
+}
+
+.whatIsTarotDiv {
+  width: auto;
+  height: auto;
+  background-color: white;
+  padding: 80px 40px;
+  font-family: $sansSerif;
+  color: $matteBlack;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2em;
+}
+
+.bookBoxDesc {
+  line-height: 2em;
+  text-align: left;
 }
 
 /* END BOOK ME STYLES */
@@ -505,7 +531,7 @@ html {
 .footerDiv {
   width: auto;
   height: 400px;
-  background-color: #f2f2f2;
+  background-color: $matteBlack;
 }
 
 /* END FOOTER STYLES */
@@ -516,16 +542,29 @@ html {
 
   .tarotAppDiv {
     width: auto;
-    height: 100vh;
+    height: auto;
     background-color: #f2f2f2;
     padding: 40px;
+    font-family: $sansSerif;
   }
 
   #dailyCardDiv {
-    width: 400px;
-    height: 600px;
+    width: 50%;
+    height: auto;
     padding: 40px;
     background-color: white;
+  }
+
+  #dailyCardHr {
+    width: auto;
+    border: 1px solid grey;
+    opacity: 0;
+    transition: 1s;
+  }
+
+  #cardDescription {
+    text-align: left;
+    font-size: 16px;
   }
 
   #dailyCardPic {

@@ -7,6 +7,7 @@ import About from './components/about.js';
 import BookMe from './components/waysToBook.js';
 import Footer from './components/footer.js';
 import TarotApp from './components/tarotApp.js';
+import WhatIsTarot from './components/whatIsTarot.js';
 
 import './styles/sass/App.css';
 
@@ -16,6 +17,7 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <MainBanner />
+        <WhatIsTarot />
         <About />
         <BookMe />
         <Footer />

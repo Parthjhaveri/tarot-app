@@ -20,20 +20,22 @@ class About extends Component {
 
                 <div className="col-md-6">
                   <div id="descriptionDiv">
-                    With over 25 Years of experience in guiding individuals to live
-                    more fulfilling lives, I know (personally) the importance of
-                    never giving up.
-                    <br />
-                    <br />
-                    Whether you have problems personally, financially, spiritually
-                    - or even if you just need some one to help guide you through
-                    your struggles, I can provide guidance that can help you reach
-                    your goals and quell all of your problems.
-                    <br />
-                    <br />
-                    Please feel free to reach out!
+                      My journey with Tarot started 24 years ago when my son was very sick and in bed
+                      for 3 years. I used to ask myself that why did this happen to a small 4 year old.
+                      When would he get better and run around like other children? At that time  my friend
+                      gifted me with a book on Tarot cards and that started my wonderful and soul satisfying
+                      journey with the Tarot. It gave me answers and helped me to deal with all the difficulties
+                      that my son and my family were facing. After that began my bond with the cards. It was
+                      as if they came looking for me!! Ever since I have been doing thousands of readings for
+                      freinds, family and ofcourse for seekers.
+                      <br />
+                      <br />
+                      Let me help you too. Call me or contact me for a reading in a serene and peaceful
+                      surrounding. I can do accurate phone redaings too .Call today. You will  be making
+                      the right choice! Let me be that friend you want to go to.
+
                     <blockquote>
-                    <h3 id="taraBlockquote">- TARA</h3>
+                    <h3 id="taraBlockquote">- Best, Tara.</h3>
                     </blockquote>
                   </div>
                 </div>

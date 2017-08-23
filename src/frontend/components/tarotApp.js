@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import '../styles/sass/App.css';
 
 // IMPORT REDUX AND FILES
-// import { Redux, createStore } from "redux";
-import { displayCard, displayPersonAdvice, displaySituationAdvice } from '../redux/actions/index.js';
+import { Redux, createStore } from "redux";
+import store from '../../index.js';
+import { displayCard, displayPersonAdvice, displaySituationAdvice, testNum } from '../redux/actions/index.js';
 import reducer from '../redux/reducers/index.js';
-import '../redux/store/store.js';
 import action from '../redux/actions/index.js';
+import { connect } from 'react-redux'
 
 class TarotApp extends Component {
 
@@ -20,10 +21,13 @@ class TarotApp extends Component {
       cardDesc: "",
     }
 
-
   }
 
-  // DISPATCH ACTIONS TO THE STORE
+  // FUNCTIONS DISPATCH ACTIONS TO THE STORE
+  handleNumTest = () => {
+    return this.store.dispatch(testNum())
+  }
+
   handleTarotClick = () => {
     this.store.dispatch(displayCard())
   }
@@ -327,7 +331,7 @@ class TarotApp extends Component {
                   </div>
                   <div className="card">
                   </div>
-                  <div className="card">
+                  <div className="card" onClick={this.handleNumTest.bind(this)}>
                   </div>
 
                 </center>

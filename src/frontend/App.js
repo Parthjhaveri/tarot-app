@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
+// import { Redux, createStore } from "redux";
+
 import MainBanner from './components/mainBanner.js';
 import Navbar from './components/navbar.js';
 import About from './components/about.js';

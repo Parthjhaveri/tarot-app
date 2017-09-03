@@ -13,6 +13,7 @@ import WhatIsTarot from './components/whatIsTarot.js';
 
 import './styles/sass/App.css';
 
+import store from '../index.js';
 import reducer from './redux/reducers/index.js';
 import './redux/actions/index.js';
 
@@ -24,6 +25,7 @@ class App extends Component {
         <Navbar />
         <MainBanner />
         <WhatIsTarot />
+        <About />
         <BookMe />
         <Footer />
       </div>

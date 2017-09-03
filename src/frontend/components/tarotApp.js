@@ -3,11 +3,13 @@ import '../styles/sass/App.css';
 
 // IMPORT REDUX AND FILES
 import { Redux, createStore } from "redux";
-import store from '../../index.js';
+import store from '../redux/store/store.js';
 import { displayCard, displayPersonAdvice, displaySituationAdvice, testNum } from '../redux/actions/index.js';
 import reducer from '../redux/reducers/index.js';
 import action from '../redux/actions/index.js';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+import Navbar from './navbar.js';
+import Footer from './footer.js';
 
 class TarotApp extends Component {
 
@@ -21,23 +23,26 @@ class TarotApp extends Component {
       cardDesc: "",
     }
 
+     this.handleNumTest = this.handleNumTest.bind(this);
+
   }
 
   // FUNCTIONS DISPATCH ACTIONS TO THE STORE
   handleNumTest = () => {
-    return this.store.dispatch(testNum())
+    this.props.dispatch(testNum())
+    // console.log(this.store);
   }
 
   handleTarotClick = () => {
-    this.store.dispatch(displayCard())
+    this.props.dispatch(displayCard())
   }
 
   handleDisplayPersonAdvice = () => {
-    this.store.dispatch(displayPersonAdvice())
+    this.props.dispatch(displayPersonAdvice())
   }
 
   handleDisplaySituationAdvice = () => {
-    this.store.dispatch(displaySituationAdvice())
+    this.props.dispatch(displaySituationAdvice())
   }
 
   componentDidMount() {
@@ -251,6 +256,8 @@ class TarotApp extends Component {
     return (
       <div>
 
+      <Navbar />
+
         <div className="tarotAppDiv">
           <center>
             <div className="row">
@@ -342,9 +349,11 @@ class TarotApp extends Component {
           </center>
         </div>
 
+        <Footer />
+
       </div>
     );
   }
 }
 
-export default TarotApp;
+export default connect()(TarotApp);

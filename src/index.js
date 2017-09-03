@@ -11,28 +11,33 @@ import Footer from './frontend/components/footer.js';
 import TarotApp from './frontend/components/tarotApp.js';
 
 import registerServiceWorker from './registerServiceWorker';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 
 // REDUX IMPORTS
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+// import { ConnectedRouter as Router, routerReducer, routerMiddleware } from 'react-router-redux';
+
 import reducer from './frontend/redux/reducers/index.js';
 import action from './frontend/redux/actions/index.js';
+import store from './frontend/redux/store/store.js';
+import { displayCard, displayPersonAdvice, displaySituationAdvice, testNum } from './frontend/redux/actions/index.js';
 
 // CREATE THE STORE/ STORE IN REFERENCE VARIABLE
-let store = createStore(reducer, /* preloadedState, */
-   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+// const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 function render() {
     ReactDOM.render(
-        // <BrowserRouter>
-        //     <div>
-        //           <Route exact path="/" component={App} />
-        //           <Route path='/tarot-app' component={TarotApp} />
-        //     </div>
-        // </BrowserRouter>,
-        <TarotApp store={store} />,
+        <Provider store={store}>
+          <BrowserRouter>
+            <div>
+              <Route exact path="/" component={App} />
+              <Route path='/tarot-app' component={TarotApp} />
+            </div>
+          </BrowserRouter>
+        </Provider>,
+        // <TarotApp store={store} />,
     document.getElementById('root')
   );
 }

@@ -4,7 +4,7 @@ import '../styles/sass/App.css';
 // IMPORT REDUX AND FILES
 import { Redux, createStore } from "redux";
 import store from '../redux/store/store.js';
-import { displayCard, displayPersonAdvice, displaySituationAdvice, testNum } from '../redux/actions/index.js';
+import { displayCard, displayPersonAdvice, displaySituationAdvice, cardPicture, cardData } from '../redux/actions/index.js';
 import reducer from '../redux/reducers/index.js';
 import action from '../redux/actions/index.js';
 import { connect } from 'react-redux';
@@ -23,27 +23,21 @@ class TarotApp extends Component {
       cardDesc: "",
     }
 
-     this.handleNumTest = this.handleNumTest.bind(this);
+     this.handleTarotClick = this.handleTarotClick.bind(this);
 
-  }
-
-  // FUNCTIONS DISPATCH ACTIONS TO THE STORE
-  handleNumTest = () => {
-    this.props.dispatch(testNum())
-    // console.log(this.store);
   }
 
   handleTarotClick = () => {
-    this.props.dispatch(displayCard())
+    this.props.dispatch(cardData())
   }
 
-  handleDisplayPersonAdvice = () => {
-    this.props.dispatch(displayPersonAdvice())
-  }
-
-  handleDisplaySituationAdvice = () => {
-    this.props.dispatch(displaySituationAdvice())
-  }
+  // handleDisplayPersonAdvice = () => {
+  //   this.props.dispatch(displayPersonAdvice())
+  // }
+  //
+  // handleDisplaySituationAdvice = () => {
+  //   this.props.dispatch(displaySituationAdvice())
+  // }
 
   componentDidMount() {
 
@@ -280,7 +274,7 @@ class TarotApp extends Component {
 
 
               <div className="col-md-7">
-                <div id="pickACardDiv">
+                <div id="pickACardDiv" className="pickCardDiv">
 
                 <div className="blackDiv">
                   <h1>Have a question? Pick 5 cards:</h1>
@@ -290,56 +284,31 @@ class TarotApp extends Component {
                   // HORIZONTAL TAROT CARD DECK
                 }
                 <center>
-                  <div className="card" onClick={this.handleTarotClick.bind(this)}>
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card">
-                  </div>
-                  <div className="card" onClick={this.handleNumTest.bind(this)}>
-                  </div>
+
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
+                  <div className="card" onClick={this.handleTarotClick}></div>
 
                 </center>
                 </div>

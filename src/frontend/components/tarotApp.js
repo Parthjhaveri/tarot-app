@@ -8,8 +8,10 @@ import { displayCard, displayPersonAdvice, displaySituationAdvice, cardPicture, 
 import reducer from '../redux/reducers/index.js';
 import action from '../redux/actions/index.js';
 import { connect } from 'react-redux';
+
 import Navbar from './navbar.js';
 import Footer from './footer.js';
+import TarotModal from './tarotModal.js';
 
 class TarotApp extends Component {
 
@@ -340,7 +342,7 @@ class TarotApp extends Component {
                   <ul id="cardDisplayUl">
                   </ul>
                 </div>
-
+                <TarotModal />
                 </div>
               </div>
 

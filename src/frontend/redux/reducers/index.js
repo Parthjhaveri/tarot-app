@@ -37,8 +37,6 @@ export default (state = initialState, action) => {
       console.log("Card Information");
       console.log(state.cardPicArray);
 
-      // document.getElementsByClassName('showCardDiv').appendChild(state.cardPicArray);
-
       // GET THE UL, CREATE AN LI AND ADD A ID TO IT
       const cardUL = document.getElementById('cardDisplayUl');
       const cardListItem = document.createElement("LI");
@@ -55,10 +53,20 @@ export default (state = initialState, action) => {
       // MOUNT THE LIST ITEM (WITH THE IMAGE TAG) ONTO THE UL
       cardUL.appendChild(cardListItem)
 
-      console.log(cardListItem)
+      cardListItem.addEventListener('click', function() {
 
-      // document.getElementById('tarotCardPic').src = state.cardPicArray[0];
-      // document.getElementById('tarotCardPic').style.display = "initial";
+        const cardModal = document.getElementsByClassName('tarotModalDiv')[0];
+        cardModal.style.display = 'initial';
+
+        // CLICK ON BACK GROUND TO EXIT MODAL
+        window.onclick = function(event) {
+          if (event.target === cardModal) {
+            cardModal.style.display = "none";
+          }
+        }
+
+      })
+
 
         return Object.assign({}, state, {
           // cardPic: state.cardPic.concat(state.cardPic[Math.floor(Math.random() * state.cardPic.length)]),
@@ -68,7 +76,6 @@ export default (state = initialState, action) => {
           situationData: state.situationData.replace(state.situationData, "Situation Data"),
           counter: state.counter + 1
         })
-
 
       default:
         return state

@@ -503,8 +503,40 @@ html {
   display: inline-block;
   margin-right: 10px; }
 
+#tarotCardArrayPic:hover {
+  cursor: pointer; }
+
 #tarotCardLi {
   display: inline-block; }
+
+.tarotModalDiv {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black w/ opacity */
+  box-shadow: 50px 50px 100px grey;
+  display: none;
+  position: fixed;
+  overflow: auto;
+  z-index: 1; }
+
+.tarotModalContent {
+  width: 80%;
+  height: 200px;
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  color: white; }
+
+#tarotModalExit {
+  float: right;
+  color: black;
+  font-weight: bolder;
+  margin-top: -5px; }
 
 /* END TAROT DIV STYLES */
 

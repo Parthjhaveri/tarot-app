@@ -29,9 +29,8 @@ export default (state = initialState, action) => {
       case "CARD_DATA":
 
       // RESTRICT CARDS TO 5 BY REMOVING THE EVENT LISTNER
-      if (state.counter >= 5) {
-        //...
-        alert("No more than 5 cards!")
+      if (state.counter >= 4) {
+        document.getElementsByClassName('cardScrollDiv')[0].style.pointerEvents = "none";
       }
 
       console.log("Card Information");
@@ -55,18 +54,31 @@ export default (state = initialState, action) => {
 
       cardListItem.addEventListener('click', function() {
 
-        const cardModal = document.getElementsByClassName('tarotModalDiv')[0];
-        cardModal.style.display = 'initial';
+          const cardModal = document.getElementsByClassName('tarotModalDiv')[0];
+          cardModal.style.display = 'initial';
 
-        // CLICK ON BACK GROUND TO EXIT MODAL
-        window.onclick = function(event) {
-          if (event.target === cardModal) {
-            cardModal.style.display = "none";
+          // CLICK ON BACK GROUND TO EXIT MODAL
+          window.onclick = function(event) {
+            if (event.target === cardModal) {
+              cardModal.style.display = "none";
+            }
           }
+
+      }) // END EVENT LISTENER FUNCTION (LINE 56)
+
+      // EXIT BUTTON FOR MODAL
+      const exitButton = document.getElementById('tarotModalExit');
+      exitButton.onclick = function(event) {
+
+        const cardModal = document.getElementsByClassName('tarotModalDiv')[0];
+
+        if (event.target === exitButton) {
+          cardModal.style.display = "none";
         }
+      }
 
-      })
-
+      // BASED ON CARD CLICKED, RENDER CARD DESCRIPTION
+      //...
 
         return Object.assign({}, state, {
           // cardPic: state.cardPic.concat(state.cardPic[Math.floor(Math.random() * state.cardPic.length)]),

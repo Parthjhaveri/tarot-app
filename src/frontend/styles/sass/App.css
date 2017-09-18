@@ -454,7 +454,9 @@ html {
   height: auto;
   overflow-x: scroll;
   padding: 20px;
-  margin: 40px; }
+  margin: 0px 40px;
+  display: none;
+  opacity: 0; }
 
 .blackDiv {
   width: auto;
@@ -537,6 +539,13 @@ html {
   color: black;
   font-weight: bolder;
   margin-top: -5px; }
+
+#getStarted {
+  margin-left: 40px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  font-weight: bolder; }
 
 /* END TAROT DIV STYLES */
 

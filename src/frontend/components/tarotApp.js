@@ -240,6 +240,14 @@ class TarotApp extends Component {
 
   }
 
+  // BUTTON PRESS GET STARTED
+  getStartedFunc() {
+    let cardDiv = document.getElementsByClassName('cardScrollDiv')[0]
+    cardDiv.style.display = 'inherit';
+    cardDiv.style.transition = '2s';
+    cardDiv.style.opacity = 1;
+  }
+
   render() {
     return (
       <div>
@@ -277,6 +285,9 @@ class TarotApp extends Component {
                 {
                   // HORIZONTAL TAROT CARD DECK
                 }
+
+                <button id="getStarted" onClick={this.getStartedFunc}>GET STARTED</button>
+
                 <center>
                   <div className="cardScrollDiv">
                     <div className="card" onClick={this.handleTarotClick}></div>

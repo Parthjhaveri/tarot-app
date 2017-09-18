@@ -47,7 +47,7 @@ export default (state = initialState, action) => {
       // CREATE THE IMAGE TAG
       const imageTag = document.createElement("IMG");
       imageTag.setAttribute('id', 'tarotCardArrayPic');
-      imageTag.src = state.cardPicArray;
+      imageTag.src = state.cardPic[Math.floor(Math.random() * state.cardPic.length)];
 
       // MOUNT THE IMAGE TAG ONTO THE LI
       cardListItem.appendChild(imageTag);

@@ -336,6 +336,17 @@ class TarotApp extends Component {
                 </center>
                 <hr />
 
+                <div className="showCardDiv">
+                  <ul id="cardDisplayUl">
+                  </ul>
+                </div>
+
+                <div id="adviceDiv">
+                  <h2>Person advice</h2>
+                  <h2>Situation advice</h2>
+                </div>
+
+
                 </div>
               </div>
 
@@ -345,8 +356,8 @@ class TarotApp extends Component {
         </div>
 
         <Footer />
+        </div>
 
-      </div>
     );
   }
 }

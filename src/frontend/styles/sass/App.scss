@@ -588,7 +588,7 @@ html {
     width: auto;
     height: auto;
     overflow-x: scroll;
-    padding: 40px;
+    padding: 20px;
     margin: 40px;
   }
 
@@ -618,11 +618,33 @@ html {
   .card:hover {
     background-color: $matteBlack;
     vertical-align: bottom;
-    transition: 1s;
+    transition: 2s;
     position: relative;
-    bottom: 10px;
+    bottom: 15px;
     -webkit-transition-delay: 1s;
     transition-duration: 2s;
+  }
+
+  .showCardDiv {
+    width: auto;
+    height: 120px;
+    padding: 20px;
+  }
+
+  #adviceDiv {
+    width: auto;
+    height: auto;
+    margin: 40px;
+  }
+
+  #tarotCardArrayPic {
+    width: 80px;
+    height: 120px;
+    display: inline-block;
+  }
+
+  #tarotCardLi {
+    display: inline-block;
   }
 
 /* END TAROT DIV STYLES */

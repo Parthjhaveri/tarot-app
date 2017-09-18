@@ -444,7 +444,7 @@ html {
   height: auto;
   text-align: left;
   background-color: white;
-  padding: 0px;
+  padding-bottom: 40px;
   box-shadow: 40px 10px 40px silver;
   color: black;
   position: absolute; }
@@ -489,7 +489,8 @@ html {
 .showCardDiv {
   width: auto;
   height: 120px;
-  padding: 20px; }
+  padding: 20px;
+  margin-bottom: 40px; }
 
 #adviceDiv {
   width: auto;
@@ -497,8 +498,8 @@ html {
   margin: 40px; }
 
 #tarotCardArrayPic {
-  width: 80px;
-  height: 120px;
+  width: 100px;
+  height: 140px;
   display: inline-block;
   margin-right: 10px; }
 

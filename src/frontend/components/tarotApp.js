@@ -341,12 +341,6 @@ class TarotApp extends Component {
                   </ul>
                 </div>
 
-                <div id="adviceDiv">
-                  <h2>Person advice</h2>
-                  <h2>Situation advice</h2>
-                </div>
-
-
                 </div>
               </div>
 

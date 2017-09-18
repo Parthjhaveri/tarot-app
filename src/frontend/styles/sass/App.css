@@ -424,7 +424,8 @@ html {
   height: auto;
   padding: 40px;
   background-color: white;
-  box-shadow: 40px 10px 40px silver; }
+  box-shadow: 40px 10px 40px silver;
+  margin-bottom: 40px; }
 
 #dailyCardHr {
   width: auto;
@@ -437,7 +438,7 @@ html {
   line-height: 2em; }
 
 #dailyCardPic {
-  width: 200px; }
+  width: 120px; }
 
 #pickACardDiv {
   width: auto;
@@ -446,8 +447,7 @@ html {
   background-color: white;
   padding-bottom: 40px;
   box-shadow: 40px 10px 40px silver;
-  color: black;
-  position: absolute; }
+  color: black; }
 
 .cardScrollDiv {
   width: auto;

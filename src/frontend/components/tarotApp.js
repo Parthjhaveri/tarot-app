@@ -242,10 +242,15 @@ class TarotApp extends Component {
 
   // BUTTON PRESS GET STARTED
   getStartedFunc() {
+
     let cardDiv = document.getElementsByClassName('cardScrollDiv')[0]
     cardDiv.style.display = 'inherit';
     cardDiv.style.transition = '2s';
     cardDiv.style.opacity = 1;
+
+    let dailyCard = document.getElementById('dailyCardDiv');
+    dailyCard.style.display = "none";
+
   }
 
   render() {
@@ -255,7 +260,8 @@ class TarotApp extends Component {
       <Navbar />
 
         <div className="tarotAppDiv">
-          <center>
+
+
             <div className="row">
 
               <div className="col-md-5">
@@ -359,7 +365,7 @@ class TarotApp extends Component {
 
             </div>
 
-          </center>
+          
         </div>
 
         <Footer />

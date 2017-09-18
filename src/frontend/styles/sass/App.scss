@@ -555,6 +555,7 @@ html {
     padding: 40px;
     background-color: white;
     box-shadow: 40px 10px 40px silver;
+    margin-bottom: 40px;
   }
 
   #dailyCardHr {
@@ -570,7 +571,7 @@ html {
   }
 
   #dailyCardPic {
-    width: 200px;
+    width: 120px;
   }
 
   #pickACardDiv {
@@ -581,7 +582,6 @@ html {
     padding-bottom: 40px;
     box-shadow: 40px 10px 40px silver;
     color: black;
-    position: absolute;
   }
 
   .cardScrollDiv {

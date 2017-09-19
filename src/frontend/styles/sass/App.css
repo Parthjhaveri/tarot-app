@@ -468,7 +468,7 @@ button:focus {
 .cardScrollDiv {
   width: auto;
   height: auto;
-  overflow-x: scroll;
+  overflow-x: none;
   padding: 20px;
   margin: 0px 40px;
   display: none;
@@ -493,7 +493,8 @@ button:focus {
   margin: 2px;
   margin-left: -100px;
   transition: 1s;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
 
 .card:hover {
   background-color: #1a1a1a;
@@ -503,6 +504,11 @@ button:focus {
   bottom: 15px;
   -webkit-transition-delay: 1s;
   transition-duration: 2s; }
+
+#moveCard {
+  transform: translate(-500px, 200px);
+  transition: 2s;
+  z-index: 1; }
 
 .showCardDiv {
   width: auto;

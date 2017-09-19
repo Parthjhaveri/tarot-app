@@ -29,8 +29,19 @@ class TarotApp extends Component {
 
   }
 
-  handleTarotClick = () => {
+  handleTarotClick = (event) => {
     this.props.dispatch(cardData())
+
+    const movingCard = document.getElementsByClassName('cardScrollDiv')[0].childNodes;
+
+    for (var i = 0; i < movingCard.length; i++) {
+      if (event.target === movingCard[i]) {
+        movingCard[i].setAttribute('id', 'moveCard');
+        movingCard[i].style.opacity = 0;
+      }
+    }
+
+    // console.log("Card Scroll Div", document.getElementsByClassName('cardScrollDiv')[0].childNodes)
   }
 
   componentDidMount() {
@@ -280,7 +291,7 @@ class TarotApp extends Component {
                        <br />
                         <img src={this.state.dailyPic} id="dailyCardPic" />
                           <h3>{this.state.cardMeaning}</h3>
-                          <button id="openDivButton">Read More... <span className="glyphicon glyphicon-menu-down"></span></button>
+                           <button id="openDivButton">Read More... <span className="glyphicon glyphicon-menu-down"></span></button>
                             <hr id="dailyCardHr"/>
                               <br />
                             <p id="cardDescription">{this.state.cardDesc}</p>
@@ -303,21 +314,6 @@ class TarotApp extends Component {
 
                 <center>
                   <div className="cardScrollDiv">
-                    <div className="card" onClick={this.handleTarotClick}></div>
-                    <div className="card" onClick={this.handleTarotClick}></div>
-                    <div className="card" onClick={this.handleTarotClick}></div>
-                    <div className="card" onClick={this.handleTarotClick}></div>
-                    <div className="card" onClick={this.handleTarotClick}></div>
-                    <div className="card" onClick={this.handleTarotClick}></div>
-                    <div className="card" onClick={this.handleTarotClick}></div>
-                    <div className="card" onClick={this.handleTarotClick}></div>
-                    <div className="card" onClick={this.handleTarotClick}></div>
-                    <div className="card" onClick={this.handleTarotClick}></div>
-                    <div className="card" onClick={this.handleTarotClick}></div>
-                    <div className="card" onClick={this.handleTarotClick}></div>
-                    <div className="card" onClick={this.handleTarotClick}></div>
-                    <div className="card" onClick={this.handleTarotClick}></div>
-                    <div className="card" onClick={this.handleTarotClick}></div>
                     <div className="card" onClick={this.handleTarotClick}></div>
                     <div className="card" onClick={this.handleTarotClick}></div>
                     <div className="card" onClick={this.handleTarotClick}></div>

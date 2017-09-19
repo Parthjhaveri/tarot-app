@@ -498,12 +498,8 @@ button:focus {
 
 .card:hover {
   background-color: #1a1a1a;
-  vertical-align: bottom;
-  transition: 2s;
-  position: relative;
-  bottom: 15px;
-  -webkit-transition-delay: 1s;
-  transition-duration: 2s; }
+  transform: translate(0px, -20px);
+  transition: .2s; }
 
 #moveCard {
   transform: translate(-400px, 200px) rotateY(180deg);

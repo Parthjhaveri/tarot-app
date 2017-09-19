@@ -649,12 +649,13 @@ html {
 
   .card:hover {
     background-color: $matteBlack;
-    vertical-align: bottom;
-    transition: 2s;
-    position: relative;
-    bottom: 15px;
-    -webkit-transition-delay: 1s;
-    transition-duration: 2s;
+    // vertical-align: bottom;
+    transform: translate(0px, -20px);
+    transition: .2s;
+    // position: relative;
+    // bottom: 15px;
+    // -webkit-transition-delay: 1s;
+    // transition-duration: 2s;
   }
 
   #moveCard {

@@ -251,6 +251,19 @@ class TarotApp extends Component {
     let dailyCard = document.getElementById('dailyCardDiv');
     dailyCard.style.display = "none";
 
+    let pickCard = document.getElementById('pickACardDiv');
+    let bsRow = document.getElementById('bootStrapRow');
+    // bsRow.style.display = "none";
+    pickCard.style.width = "100%";
+    pickCard.style.overflowX = "initial";
+
+  }
+
+  expandDailyCardDiv() {
+
+    document.getElementById('dailyCardDiv').style.height = "auto";
+    document.getElementById('openDivButton').style.display = "none";
+
   }
 
   render() {
@@ -261,31 +274,25 @@ class TarotApp extends Component {
 
         <div className="tarotAppDiv">
 
+                  <div id="dailyCardDiv" onClick={this.expandDailyCardDiv}>
+                    <center>
+                      <h1>Card of the day:</h1>
+                       <br />
+                        <img src={this.state.dailyPic} id="dailyCardPic" />
+                          <h3>{this.state.cardMeaning}</h3>
+                          <button id="openDivButton">Read More... <span className="glyphicon glyphicon-menu-down"></span></button>
+                            <hr id="dailyCardHr"/>
+                              <br />
+                            <p id="cardDescription">{this.state.cardDesc}</p>
+                          <br />
+                       <p><em>Content reference credit: <a href="https://www.daily-tarot-girl.com/tarot-card-meanings/list-of-tarot-card-meanings/" target="_blank">https:daily-tarot-girl.com/tarot-card-meanings/...</a></em></p>
+                     </center>
+                  </div>
 
-            <div className="row">
-
-              <div className="col-md-5">
-                <div id="dailyCardDiv">
-                  <center>
-                    <h1>Card of the day:</h1>
-                     <br />
-                      <img src={this.state.dailyPic} id="dailyCardPic" />
-                        <h3>{this.state.cardMeaning}</h3>
-                          <hr id="dailyCardHr"/>
-                            <br />
-                          <p id="cardDescription">{this.state.cardDesc}</p>
-                        <br />
-                     <p><em>Content reference credit: <a href="https://www.daily-tarot-girl.com/tarot-card-meanings/list-of-tarot-card-meanings/" target="_blank">https:daily-tarot-girl.com/tarot-card-meanings/...</a></em></p>
-                   </center>
-                </div>
-              </div>
-
-
-              <div className="col-md-7">
                 <div id="pickACardDiv" className="pickCardDiv">
 
                 <div className="blackDiv">
-                  <h1>Have a question? Pick 5 cards below:</h1>
+                  <h2>Click on the Button to get started with your Free Reading!</h2>
                 </div>
                 <br />
                 {
@@ -361,11 +368,7 @@ class TarotApp extends Component {
                 </div>
                 <TarotModal />
                 </div>
-              </div>
 
-            </div>
-
-          
         </div>
 
         <Footer />

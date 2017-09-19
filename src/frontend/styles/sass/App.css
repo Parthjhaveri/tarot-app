@@ -420,12 +420,17 @@ html {
   font-family: "Open Sans", sans-serif; }
 
 #dailyCardDiv {
-  width: auto;
-  height: auto;
+  width: 50%;
+  height: 650px;
   padding: 40px;
   background-color: white;
   box-shadow: 40px 10px 40px silver;
-  margin-bottom: 40px; }
+  display: inline-block;
+  overflow-y: hidden;
+  z-index: 2; }
+
+button:focus {
+  outline: none; }
 
 #dailyCardHr {
   width: auto;
@@ -441,13 +446,24 @@ html {
   width: 120px; }
 
 #pickACardDiv {
-  width: auto;
-  height: auto;
+  width: 48%;
+  height: 650px;
   text-align: left;
   background-color: white;
   padding-bottom: 40px;
   box-shadow: 40px 10px 40px silver;
-  color: black; }
+  color: black;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px; }
+
+#openDivButton {
+  background-color: #1a1a1a;
+  width: 200px;
+  padding: 5px 20px 5px 20px;
+  color: white;
+  border: 1px solid #1a1a1a;
+  margin: 10px; }
 
 .cardScrollDiv {
   width: auto;

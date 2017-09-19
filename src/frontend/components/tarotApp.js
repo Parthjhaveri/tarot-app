@@ -32,6 +32,7 @@ class TarotApp extends Component {
   handleTarotClick = (event) => {
     this.props.dispatch(cardData())
 
+    // MOVING CARD ANIMATION
     const movingCard = document.getElementsByClassName('cardScrollDiv')[0].childNodes;
 
     for (var i = 0; i < movingCard.length; i++) {
